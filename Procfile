@@ -1,2 +1,2 @@
 release: python manage.py migrate
-web: gunicorn sdro-cbmes.wsgi --log-file -
+web: gunicorn sdro_cbmes.wsgi --log-file -
