@@ -25,7 +25,11 @@ SECRET_KEY = '(r2(hwxtxjwf$wkrk!#%n+c=yeq)c6dr82oqq%5wdmou*md#ih'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'localhost',
+    'sdro-cbmes.herokuapp.com',
+    'sdro-cbmes-heitorbc.c9users.io',
+    ]
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 
@@ -105,9 +109,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/1.9/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'pt-br'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Sao_Paulo'
 
 USE_I18N = True
 
