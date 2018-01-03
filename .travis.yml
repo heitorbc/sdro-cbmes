@@ -7,10 +7,11 @@ branches:
   only:
   - master
 install:
-- pip install -r requirements.txt
+  - pip install -r requirements.txt
 script:
 - python manage.py makemigrations
 - python manage.py migrate
+
 deploy:
   provider: heroku
   api_key:
